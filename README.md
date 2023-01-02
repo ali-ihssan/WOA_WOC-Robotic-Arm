@@ -8,5 +8,5 @@ Group members:
 1. Ali Al-yasari : s2177303
 2. Ahmed Al-yasari : S2002913
 3. Yang Zhenyu : s2118292
-4. Guo Yuwei : S2168298
+4. Guo Yuwei : s2168298
 5. xiongsen Mo: s2113667

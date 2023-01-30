@@ -63,45 +63,7 @@ def calculate_seedlings(field_width, field_length, min_distance, max_distance):
     return (seedlings_min, seedlings_max)
 
 
-def snooth(i, v):
-    smooth(4, 90)
-    smooth(1, 80)
-    smooth(2, 70)
-    smooth(3, 180)
-    smooth(0, 180)
-    smooth(4, 180)
-    time.sleep(1)
-    smooth(0, 135)
-    smooth(3, 150)
-    smooth(2, 130)
-    smooth(1, 180)
-    smooth(4, 90)
-
-    smooth(4, 90)
-    smooth(1, 80)
-    smooth(2, 70)
-    smooth(3, 180)
-    smooth(0, 180)
-    smooth(4, 180)
-    time.sleep(1)
-    smooth(0, 90)
-    smooth(3, 150)
-    smooth(2, 130)
-    smooth(1, 180)
-    smooth(4, 90)
-
-    smooth(4, 90)
-    smooth(1, 80)
-    smooth(2, 70)
-    smooth(3, 180)
-    smooth(0, 180)
-    smooth(4, 180)
-    time.sleep(1)
-    smooth(0, 45)
-    smooth(3, 150)
-    smooth(2, 130)
-    smooth(1, 180)
-    smooth(4, 90)
+ 
 
 
 def farmer_input():
@@ -159,7 +121,7 @@ def pcaScenario():
     angles = list(map(lambda r: math.degrees(r), ik.tolist()))
 
     for i in range(npPCAServo):
-        snooth(angles[i+1]+90, i)
+        smooth(angles[i+1]+90, i)
 
     computed_position = my_chain.forward_kinematics(ik)
     print("Computed position: %s, original position : %s" %
